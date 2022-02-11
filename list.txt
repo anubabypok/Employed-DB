@@ -1,0 +1,47 @@
+*********************************************************
+NAME: ANU BABY                   CLASS : S3 IT
+DATE : 10\12\2021                ROLL.NO : 15
+
+                   AVERAGE AND SQUARE
+*********************************************************
+
+PROGRAM
+
+
+list=[]
+sum=0
+n=int(input("Enter the size of the list:"))
+print("Enter the elements of the list:")
+for i in range(0,n):
+	num=int(input())
+	list.append(num)
+print(list)
+for i in range (0,n):
+	sum=sum+int(list[i])
+avg=sum/n
+print(avg)
+print("The square of each number is :")
+for i in range (0,n):
+
+	sq=list[i]*list[i]
+	print(sq)
+
+
+SAMPLE OUTPUT
+
+
+Enter the size of the list:5
+Enter the elements of the list:
+12
+15
+18
+16
+13
+[12, 15, 18, 16, 13]
+14.8 is the average
+The square of each number is :
+144
+225
+324
+256
+169

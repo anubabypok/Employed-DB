@@ -1,0 +1,29 @@
+*********************************************************
+NAME: ANU BABY                   CLASS : S3 IT
+DATE : 17\12\2021                ROLL.NO : 15
+
+                   FACTORIAL
+*********************************************************
+
+PROGRAM
+
+
+def factorial(n):
+	if(n==0 ):
+		return (1)
+	else:
+		return (n*factorial(n-1))
+num=3
+if(num<0):
+	print("Factorial does not exits")
+
+elif(num>0):
+	print("Factorial of ",num,"is",factorial(num))
+else:
+	print("Factorial of 0 is 1 ")
+
+
+SAMPLE OUTPUT
+
+
+Factorial of  3 is 6

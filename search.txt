@@ -1,0 +1,39 @@
+*********************************************************
+NAME: ANU BABY                   CLASS : S3 IT
+DATE : 10\12\2021                ROLL.NO : 15
+
+                 SEARCH ELEMENT
+*********************************************************
+
+PROGRAM
+
+
+a=int(input("Enter the size of elements in the list :"))
+print("Enter the elements :")
+list=[]
+for i in range (0,a):
+	b=int(input(""))
+	list.append(b)
+c=int(input("Enter the element to be searched"))
+flag=0
+for j in range (0,a):
+	if(list[j]==c):
+		flag=1
+		break
+if(flag==1):
+	print("The element is found")
+else:
+	print("The element is not found")
+
+
+SAMPLE OUTPUT
+
+Enter the size of elements in the list :5
+Enter the elements :
+1
+6
+5
+3
+2
+Enter the element to be searched5
+The element is found

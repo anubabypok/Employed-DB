@@ -1,0 +1,56 @@
+********************************************************************************************
+
+NAME : ANU BABY                                    DATE : 06\12\20021
+CLASS : S3 IT
+ROLL NO : 15
+                            INSERTION SORT
+
+*********************************************************************************************
+
+PROGRAM
+
+# include<stdio.h>
+main()
+{
+	int arr[50],n,i,j,key;
+	printf("Enter the size of the array :");
+	scanf("%d",&n);
+	printf("Enter the elements of the array :");
+	for(i=0;i<n;i++)
+	scanf("%d",&arr[i]);
+	
+	for(i=1;i<n;i++)
+	{
+		key=arr[i];
+		j=i-1;
+		while(key<arr[j]&&j>=0)
+		{
+		
+			arr[j+1]=arr[j];
+			--j;
+		}
+		arr[j+1]=key;
+	}
+	
+	printf("\n The sorted array :");
+	for(i=0;i<n;i++)
+	printf("%d\t",arr[i]);
+	getch();
+}
+
+SAMPLE OUTPUT
+
+Enter the size of the array :5
+Enter the elements of the array :1
+2
+3
+5
+4
+
+ The sorted array :1    2       3       4       5
+
+
+
+
+
+

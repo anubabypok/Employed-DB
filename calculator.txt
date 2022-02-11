@@ -1,0 +1,35 @@
+*********************************************************
+NAME: ANU BABY                   CLASS : S3 IT
+DATE : 17\12\2021                ROLL.NO : 15
+
+                   CALCULATOR
+*********************************************************
+
+PROGRAM
+
+
+
+def calc(a,b):
+	sum=a+b
+	diff=a-b
+	prod=a*b
+	div=a/b
+	print("Sum = :",sum)
+	print("Difference = :",diff)
+	print("Product = :",prod)
+	print("Division = :",div)
+
+a=int(input("Enter the first element :"))
+b=int(input("Enter the second element :"))
+calc(a,b)
+
+
+SAMPLE OUTPUT
+
+
+Enter the first element :5
+Enter the second element :8
+Sum = : 13
+Difference = : -3
+Product = : 40
+Division = : 0.625	

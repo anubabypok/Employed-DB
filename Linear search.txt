@@ -1,0 +1,41 @@
+****************************************************************************************
+NAME : ANU BABY                             DATE : 29\11\2021
+CLASS : S3 IT                       
+ROLL NO : 15                                
+                           LINEAR SEARCH
+****************************************************************************************
+
+PROGRAM
+
+#include<stdio.h>
+ main()
+
+{
+	int array[5],i,a,flag=0;
+	printf("enter the elements of the array");
+	for(i=0;i<5;i++)
+	scanf("%d",&array[i]);
+	printf("/n, enter the elments to be searched");
+	scanf("%d",&a);
+	
+	for(i=0;i<5;i++)
+		if(a==array[i])
+		flag=1;
+	
+	
+	if(flag==1)
+		printf("the element is found");
+	else
+		printf("the element is not found");
+}
+
+SAMPLE OUTPUT
+
+enter the elements of the array5
+18
+7
+19
+11
+ enter the elments to be searched11
+the element is found 
+

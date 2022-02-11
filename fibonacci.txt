@@ -1,0 +1,37 @@
+*********************************************************
+NAME: ANU BABY                   CLASS : S3 IT
+DATE : 17\12\2021                ROLL.NO : 15
+
+                   FIBONACCI
+*********************************************************
+
+PROGRAM
+
+
+def fibo(n):
+        if n<=1:
+                return n
+        else:
+                return(fibo(n-1) + fibo(n-2))
+nterms=int(input("Enter the range "))
+if nterms <=0:
+        print("Enter a positive integer ")
+else:
+        print("Fibonacci sequence: ")
+        for i in range(nterms):
+                print(fibo(i))
+
+
+SAMPLE OUTPUT
+
+
+Enter the range 8
+Fibonacci sequence:
+0
+1
+1
+2
+3
+5
+8
+13

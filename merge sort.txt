@@ -1,0 +1,71 @@
+
+/*****************************************************************************
+NAME : ANU BABY                     DATE : 13\12\2021
+CLASS : S3 IT
+ROLL NO : 15
+                    MERGE SORT
+******************************************************************************/
+
+/*PROGRAM*/
+
+
+#include<stdio.h>
+void merging(int a[25],int low,int mid,int high)
+{
+	int l1,l2,i,b[25];
+	for(l1=low,l2=mid+1,i=low;l1<=mid && l2<=high;i++)
+	{
+	if(a[l1]<=a[l2])
+		b[i]=a[l1++];
+	else
+		b[i]=a[l2++];
+	}
+	while(l1<=mid)
+		b[i++]=a[l1++];
+	while(l2<=high)
+		b[i++]=a[l2++];
+	for(i=low;i<=high;i++)
+		a[i]=b[i];
+}
+void sort(int a[25],int low, int high)
+{
+	int mid;
+
+	if(low<high)
+	{
+		mid=(low+high)/2;
+		sort(a,low,mid);
+		sort(a,mid+1,high);
+		merging(a,low,mid,high);
+	}
+}
+main()
+{
+	int i,a[25],max;
+	printf("Enter the size of list :");
+	scanf("%d",&max);
+	printf("\nEnter %d elements",max);
+	for(i=0;i<max;i++)
+	scanf("%d",&a[i]);
+	printf("Array before sorting\n");
+	for(i=0;i<max;i++)
+	printf("%d ",a[i]);
+	sort(a,0,max);
+	printf("\nArray after sorting:\n");
+	for(i=0;i<max;i++)
+	printf("%d ",a[i]);
+}
+
+/*SAMPLE OUTPUT
+Enter the size of list :5
+
+Enter 5 elements22
+20
+26
+24
+28
+Array before sorting
+22 20 26 24 28
+Array after sorting:
+20 22 24 26 28
+*/

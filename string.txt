@@ -1,0 +1,26 @@
+*********************************************************
+NAME: ANU BABY                   CLASS : S3 IT
+DATE : 10\12\2021                ROLL.NO : 15
+
+                OCCURENCES OF A STRING 
+*********************************************************
+
+PROGRAM
+
+
+str1=input("Enter the string\n")
+substr=input("Enter substring\n")
+c=0
+c=str1.count(substr)
+print("the substring occured is",c)
+
+SAMPLE OUTPUT
+
+Enter the string
+hi hi hi
+Enter substring
+hi
+the substring occured is 3
+
+
+
